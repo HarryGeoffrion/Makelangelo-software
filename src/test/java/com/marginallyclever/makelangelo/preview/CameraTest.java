@@ -74,7 +74,9 @@ public class CameraTest {
 
 
         // ARRANGE - move camera to test offset and zoom simultaneously
+        camera.zoom((int) (9.0/Camera.ZOOM_STEP_SIZE)); // undo zoom
         camera.moveRelative(100.0, 100.0);
+        camera.zoom((int) (-9.0/Camera.ZOOM_STEP_SIZE));
         // ACT
         output = camera.screenToWorldSpace(input);
         // ASSERT - offset is (100, 100) and zoom is 10 so equation should be:
