@@ -16,8 +16,8 @@ public class CameraTest {
 
     @Test
     public void testZoomOut() {
-        camera.zoom(-0.5);
-        assertEquals(0.5, camera.getZoom());
+        camera.zoom(-1);
+        assertEquals(Camera.CAMERA_ZOOM_MIN, camera.getZoom());
     }
 
     @Test
