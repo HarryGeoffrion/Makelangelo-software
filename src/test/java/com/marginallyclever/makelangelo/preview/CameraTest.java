@@ -17,21 +17,21 @@ public class CameraTest {
     @Test
     public void testZoomOut() {
         camera.zoom(-1);
-        assertEquals(Camera.CAMERA_ZOOM_MIN, camera.getZoom());
+        assertEquals(1.0 + Camera.ZOOM_STEP_SIZE, camera.getZoom());
     }
 
     @Test
     public void testZoomIn() {
         camera.zoom(1);
-        assertEquals(2.0, camera.getZoom());
+        assertEquals(1.0 - Camera.ZOOM_STEP_SIZE, camera.getZoom());
     }
 
     @Test
     public void testZoomMinAndMax() {
         camera.zoom(-2000);
-        assertEquals(Camera.CAMERA_ZOOM_MIN, camera.getZoom()); // should be 0.25
+        assertEquals(Camera.CAMERA_ZOOM_MAX, camera.getZoom()); // should be 0.25
 
         camera.zoom(2000);
-        assertEquals(Camera.CAMERA_ZOOM_MAX, camera.getZoom()); // should be 1000.0
+        assertEquals(Camera.CAMERA_ZOOM_MIN, camera.getZoom()); // should be 1000.0
     }
 }
