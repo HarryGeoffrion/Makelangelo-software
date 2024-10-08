@@ -41,7 +41,6 @@ public class CameraTest {
 
         // Equation: output.xy = input.xy/zoom + offsetXY;
 
-
         // ARRANGE - create input data
         Point2D input = new Point2D(100, 100);
         // ACT
@@ -64,7 +63,7 @@ public class CameraTest {
 
         // ARRANGE - zoom camera to test zoom
         camera.moveRelative(-100.0, -100.0); // reset position
-        camera.zoom(int(-9.0/Camera.ZOOM_STEP_SIZE));
+        camera.zoom((int) (-9.0/Camera.ZOOM_STEP_SIZE));
         // ACT
         output = camera.screenToWorldSpace(input);
         // ASSERT - zoom is (1 + 9) = 10 so equation should be:
@@ -76,7 +75,7 @@ public class CameraTest {
 
         // ARRANGE - move camera to test offset and zoom simultaneously
         camera.moveRelative(100.0, 100.0);
-        camera.zoom(int(-9.0/Camera.ZOOM_STEP_SIZE));
+        camera.zoom((int) (-9.0/Camera.ZOOM_STEP_SIZE));
         // ACT
         output = camera.screenToWorldSpace(input);
         // ASSERT - offset is (100, 100) and zoom is 10 so equation should be:
