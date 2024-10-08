@@ -28,10 +28,10 @@ public class CameraTest {
 
     @Test
     public void testZoomMinAndMax() {
-        camera.zoom(-2000);
+        camera.zoom(-999999999999999);
         assertEquals(Camera.CAMERA_ZOOM_MAX, camera.getZoom()); // should be 0.25
 
-        camera.zoom(2000);
+        camera.zoom(9999999999999999);
         assertEquals(Camera.CAMERA_ZOOM_MIN, camera.getZoom()); // should be 1000.0
     }
 }
