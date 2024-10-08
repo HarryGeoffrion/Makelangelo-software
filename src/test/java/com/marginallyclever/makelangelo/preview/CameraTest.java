@@ -47,8 +47,8 @@ public class CameraTest {
         // ACT - move camera
         camera.moveRelative(initialOffsetX, initialOffsetY);
         // ASSERT - expect position to be (20.0, 10.0)
-        assertEquals(offset_x, camera.getX());
-        assertEquals(offset_y, camera.getY());
+        assertEquals(initialOffsetX, camera.getX());
+        assertEquals(initialOffsetY, camera.getY());
 
 
         // ARRANGE - set offset
