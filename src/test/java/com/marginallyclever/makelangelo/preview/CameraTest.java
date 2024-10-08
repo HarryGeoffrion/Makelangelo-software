@@ -1,10 +1,9 @@
+package com.marginallyclever.makelangelo.preview;
+
 import static org.junit.jupiter.api.Assertions.*;
 import com.marginallyclever.convenience.Point2D;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-package com.marginallyclever.makelangelo.preview;
-
 
 public class CameraTest {
 
