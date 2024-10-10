@@ -9,13 +9,11 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
-//import org.apache.commons.lang3.builder.ToStringExclude;
 import org.junit.jupiter.api.Test;
 
-import com.marginallyclever.convenience.Point2D;
 import com.marginallyclever.convenience.LineCollection;
 import com.marginallyclever.convenience.LineSegment2D;
+import com.marginallyclever.convenience.Point2D;
 
 class TurtleTest {
 
@@ -369,12 +367,10 @@ class TurtleTest {
      * de la tortue pour les dessins. La tortue doit se retrouver a la position
      * du dernier segment de l'arc.
      */
-
     @Test
     public void drawArc() {
-        // ARRANGE - create turtle new object
+        // ARRANGE - create turtle new object and init variables
         Turtle t = new Turtle();
-
         double cx = 0;
         double cy = 0;
         double a1 = 0;
@@ -425,7 +421,6 @@ class TurtleTest {
         Turtle t = new Turtle();
 
         // ACT - draw a line that goes beyond the bounds
-        // There 
         Rectangle2D.Double currentBounds = t.getBounds();
         t.forward(currentBounds.width + 100);
         t.forward(currentBounds.height + 100);
