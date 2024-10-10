@@ -5,13 +5,13 @@ la valeur d'une variable.
 
 *CameraTest* contient les méthodes de tests suivantes:
 
-### [testZoomOut()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testZoomIn)
+### [testZoomOut()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java)
 Validation du zoom out  
 
 ### [testZoomIn()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testZoomOut)
 Validation du zoom in
 
-### [testMoveRelative()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testMoveRelative)
+### [testMoveRelative()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#L64C17-L64C33)
 Validation du déplacement de la caméra
 
 ### [testScreenToWorldSpace()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testScreenToWorldSpace)
