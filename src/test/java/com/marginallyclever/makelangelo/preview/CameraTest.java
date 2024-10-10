@@ -46,7 +46,7 @@ public class CameraTest {
     @Test
     public void testZoomIn() {
                                                                         // ARRANGE - fait dans le @BeforeEach
-        camera.zoom(1);                                          // ACT - zoom in by 1
+        camera.zoom(1);                                                 // ACT - zoom in by 1
         assertEquals(1.0 - Camera.ZOOM_STEP_SIZE, camera.getZoom());    // ASSERT - expect 0.85
 
                                                                         // ARRANGE - fait dans le @BeforeEach
