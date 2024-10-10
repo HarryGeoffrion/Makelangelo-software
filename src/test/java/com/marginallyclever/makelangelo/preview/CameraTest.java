@@ -57,7 +57,8 @@ public class CameraTest {
 
     /*
     Ce test cherche à valider que la caméra renvoit les bonnes valeurs de position
-    lorsqu'on la déplace dans la fenêtre de preview.
+    lorsqu'on la déplace dans la fenêtre de preview. Il valide d'abord que le déplacement
+    à partir de la position de départ fonctionne, et ensuite un autre déplacement.
     */
     @Test
     public void testMoveRelative() {
