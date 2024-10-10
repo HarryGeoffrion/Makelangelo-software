@@ -1,13 +1,17 @@
 package com.marginallyclever.makelangelo.turtle;
 
-import com.marginallyclever.convenience.Point2D;
-import org.junit.jupiter.api.Test;
-
-import java.awt.*;
+import java.awt.Color;
 import java.awt.geom.Rectangle2D;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.marginallyclever.convenience.Point2D;
 
 class TurtleTest {
 
@@ -283,5 +287,50 @@ class TurtleTest {
         for(int i=0;i<=10;++i) {
             assertTrue(new Point2D(i * 100, 0).distance(turtle.interpolate(d*(double)i/10.0)) < EPSILON);
         }
+    }
+
+
+    /*
+    Cette fonction cherche à valider le bon fonctionnement de la fonction countLoops()
+    qui compte le nombre de fois que la tortue a fait un "pen down, forward, pen up" ce
+    qui constitue un dessin fermé.
+    */
+    @Test
+    public void testCountLoops() {
+
+        // ARRANGE - create turtle new object
+        Turtle turtle = new Turtle();
+
+        // ACT - draw an initial "loop"
+        turtle.forward(1);
+        turtle.penDown();
+        turtle.forward(1);
+        turtle.penUp();
+
+        // ASSERT - expect 1 loop
+        assertEquals(1, turtle.countLoops());
+
+        // ACT - draw a second "loop" with two different movements
+        turtle.forward(1);
+        turtle.penDown();
+        turtle.rotate(90.0);
+        turtle.forward(1);
+        turtle.penUp();
+        // ASSERT - expect 2 loops
+        assertEquals(2, turtle.countLoops());
+
+        // ACT - draw a square
+        turtle.forward(1);
+        turtle.penDown();
+        turtle.forward(1);
+        turtle.rotate(90.0);
+        turtle.forward(1);
+        turtle.rotate(90.0);
+        turtle.forward(1);
+        turtle.rotate(90.0);
+        turtle.forward(1);
+        turtle.penUp();
+
+        assertEquals(3, turtle.countLoops());
     }
 }
