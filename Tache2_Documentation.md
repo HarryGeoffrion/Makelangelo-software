@@ -5,7 +5,7 @@ la valeur d'une variable.
 
 *CameraTest* contient les méthodes de tests suivantes:
 
-### [testZoomOut()]
+### [testZoomOut()](#:~:text=testZoomOut)
 Validation du zoom out
 
 ### [testZoomIn()]
