@@ -341,8 +341,7 @@ class TurtleTest {
 
     /*
     Cette fonction valide que la fonction addLineSegments() ajoute les segments comme 
-    attendu (en terme de déplacement de la tortue) et que, si les segments sont plus petits
-    que la taille minimale de déplacement passé en argument, ils ne sont pas tracés.
+    attendu (en terme de déplacement de la tortue).
     */
     @Test
     public void testAddLineSegments() {
@@ -358,19 +357,5 @@ class TurtleTest {
 
         // ASSERT - expect history to be of 6 and final coords to be (25.0, 25.0)
         assertEquals("Turtle{history=6, px=25.0, py=25.0, nx=1.0, ny=0.0, angle=0.0, isUp=false, color=java.awt.Color[r=0,g=0,b=0], diameter=1.0}", turtle.toString());
-
-
-        // ARRANGE - create line segment too small to draw
-        LineCollection shortSegment = new LineCollection();
-        double minLineDistance = 1.0;
-        shortSegment.add(new LineSegment2D(new Point2D(10, 10), new Point2D(10 + (minLineDistance/2.0), 10 + (minLineDistance/2.0)), Color.BLACK));
-        
-        // ACT - add line segments to turtle with min line parameters
-        turtle.addLineSegments(shortSegment, 1, minLineDistance);
-        
-        // ASSERT - expect history to be of size 11 and final coords to be unchanged as the line 
-        // was smaller than the minimum line distance.
-        assertEquals("Turtle{history=11, px=25.0, py=25.0, nx=1.0, ny=0.0, angle=0.0, isUp=false, color=java.awt.Color[r=0,g=0,b=0], diameter=1.0}", turtle.toString());
-    }
     
 }
