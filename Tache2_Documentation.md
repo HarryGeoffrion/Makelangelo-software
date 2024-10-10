@@ -5,17 +5,17 @@ la valeur d'une variable.
 
 *CameraTest* contient les méthodes de tests suivantes:
 
-### [testZoomOut()](#:~:text=testZoomOut)
-Validation du zoom out
+### [testZoomOut()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testZoomIn)
+Validation du zoom out  
 
-### [testZoomIn()]
+### [testZoomIn()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testZoomOut)
 Validation du zoom in
 
-### [testMoveRelative()]
+### [testMoveRelative()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testMoveRelative)
 Validation du déplacement de la caméra
 
-### [testScreenToWorldSpace()]
+### [testScreenToWorldSpace()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testScreenToWorldSpace)
 Validation du convertissement des coordonnées sur une image en fonction du zoom et de la position relative de la caméra
 
-### [testZoomToFit()]
+### [testZoomToFit()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testZoomToFit)
 Validation du zoom de la caméra pour preview des dimensions spécifiques
