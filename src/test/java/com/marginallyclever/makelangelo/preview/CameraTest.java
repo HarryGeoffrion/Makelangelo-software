@@ -113,18 +113,14 @@ public class CameraTest {
     @Test
     public void testZoomToFit() {
         // ARRANGE - set initial width and height
-        double initialWidth = 1000;
-        camera.setWidth(initialWidth);
-        double initialHeight = 500;
-        camera.setHeight(initialHeight);
+        double width = 2000.0;
+        double height = 1000.0;
 
         // ACT - call zoomToFit with new dimensions
-        double newWidth = 2000;
-        double newHeight = 1000;
         camera.zoomToFit(newWidth, newHeight);
 
-        // ASSERT - check if the zoom level is correctly set
-        double expectedZoom = Math.max(newWidth / initialHeight, newHeight / initialWidth);
+        // ASSERT - check if zoom is what we expect
+        double expectedZoom = Math.max(width / height, height / width);
         assertEquals(expectedZoom, camera.getZoom());
     }
 }
