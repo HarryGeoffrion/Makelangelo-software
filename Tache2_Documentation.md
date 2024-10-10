@@ -5,17 +5,17 @@ la valeur d'une variable.
 
 *CameraTest* contient les méthodes de tests suivantes:
 
-### [testZoomOut()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java)
+### [testZoomOut()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#L31C17-L31C28)
 Validation du zoom out  
 
-### [testZoomIn()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testZoomOut)
+### [testZoomIn()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#L47C17-L47C27)
 Validation du zoom in
 
 ### [testMoveRelative()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#L64C17-L64C33)
 Validation du déplacement de la caméra
 
-### [testScreenToWorldSpace()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testScreenToWorldSpace)
+### [testScreenToWorldSpace()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#L95C17-L95C39)
 Validation du convertissement des coordonnées sur une image en fonction du zoom et de la position relative de la caméra
 
-### [testZoomToFit()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#:~:text=testZoomToFit)
+### [testZoomToFit()](https://github.com/HarryGeoffrion/Makelangelo-software/blob/camera_tests/src/test/java/com/marginallyclever/makelangelo/preview/CameraTest.java#L146C17-L146C30)
 Validation du zoom de la caméra pour preview des dimensions spécifiques
